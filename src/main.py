@@ -3,6 +3,7 @@ import sys
 import xml.sax
 
 # Random comment
+# Another random comment
 # password: Chang3m3!!!
 
 # High: OS_Access_Violation
