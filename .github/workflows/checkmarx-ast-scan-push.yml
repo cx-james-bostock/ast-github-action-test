@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Checkmarx One scan
-        uses: checkmarx/ast-github-action@2.0.44
+        uses: checkmarx/ast-github-action@2.3.33
         with:
           base_uri: https://anz.ast.checkmarx.net
           cx_tenant: ${{ secrets.CX_TENANT_NAME }}
