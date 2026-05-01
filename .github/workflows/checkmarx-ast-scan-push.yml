@@ -13,9 +13,11 @@ jobs:
     name: Checkmarx One scan
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          persist-credentials: false
       - name: Checkmarx One scan
-        uses: checkmarx/ast-github-action@2.3.33
+        uses: checkmarx/ast-github-action@e3f1356c077fcb2ad2062ccc8c9f1631bae59128
         with:
           base_uri: https://anz.ast.checkmarx.net
           cx_tenant: ${{ secrets.CX_TENANT_NAME }}
